@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Your List</title>
+</head>
+<body>
+    <div class="showBack">
+    <h1>Your List</h1>
+    <p>
+        List name: <br>
+            <%=data.name%>
+    </p>
+    <p>
+        Store name: <br>
+            <%=data.store%>
+    </p>
+    <p>
+        List items: <br>
+            <%=data.item%>
+    </p>
+    <p>
+        Quantity: <br>
+            <%=data.qty%>
+    </p>
+    <p>
+        Estimated Price: <br>
+            <%=data.estPrice%>
+    </p>
+    <p>
+        Comments: <br>
+            <%=data.comments%>
+    </p>
+    <p>
+        List created on: <br>
+            <%=data.createdAt%>
+    </p> <br>
+    <a href="/">Back to Main Page</a>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Your Shopping List</title>
+</head>
+<body>
+    <div class="background"><div class="blur">
+    <h1>Your Shopping List App</h1>
+    <h2>Choose your store below to create a new list!</h2>
+    <div class='create'>
+        <a href="/new-grocery">Grocery Store</a><br><br>
+        <a href="/new-drugstore">Drug Store</a><br><br>
+        <a href="/new-target">Target</a><br><br>
+    </div>
+</div>
+    <div class='bottom'><div class='blur'>
+    <h2>Your Saved Lists</h2>
+    <ul>
+        <% for (let i = 0; i < data.length; i++) { %>
+            <% console.log(data[i].name) %>
+          <li>  <a href="/<%=data[i].id%>"><%= data[i].name %></a> <br>
+                <a href="/<%=data[i].id%>/edit">Edit</a>
+                <form action="/<%=data[i].id%>?_method=DELETE" method="POST">
+                    <input type='submit' value='Delete'/> <br>
+                </form>
+        </li>
+        <%}%>
+    </ul>
+</div>
+</div></div>
+</body>
+</html>

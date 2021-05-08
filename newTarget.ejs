@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>New Target List</title>
+</head>
+<body>
+    <h1>Create Your Target Shopping List</h1>
+    <form action="/new-target" method="POST">
+        List Name: <input type='text' name='name'/><br>
+        Store Name: <input type='text' name='store' /><br>
+        Item: <input type='text-area' name='item' /><br>
+        Quantity: <input type='text' name='qty' /> <br>
+        Estimated Price: <input type='text' name='estPrice' /> <br>
+        Comments: <input type='text-area' name='comments' /> <br>
+        <input type='submit' value='Create List' /> <br>
+    </form>
+
+    <a href="/">Back to Main Page</a>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+body {
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    background-color: rgba(241, 232, 228, 0.842)
+}
+
+.create {
+    border: 2px solid black;
+    margin: 40px;
+    padding-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 40px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+h1, h2 {
+    font-family: 'Krona One', sans-serif;
+    /* border: 2px solid black; */
+    margin: 40px;
+}
+
+.bottom {
+    border: 2px solid black;
+    margin: 40px;
+}
+
+.background {
+    background-image: url("https://images.pexels.com/photos/880459/pexels-photo-880459.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    
+
+}
+
+.blur {
+    backdrop-filter: blur(2px);
+    filter: saturate(70%)
+}

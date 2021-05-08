@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>New Miscellaneous List</title>
+<body>
+    <h1>Create Your Shopping List</h1>
+    <form action="/new-other" method="POST">
+        List Name: <input type='text' name='name'/><br>
+        Store Name: <input type='text' name='store' /><br>
+        Item: <input type='text-area' name='item' /><br>
+        Quantity: <input type='text' name='qty' /> <br>
+        Estimated Price: <input type='text' name='estPrice' /> <br>
+        <div class='form-group'>
+            <label for='comment'>Comments:</label>
+            <textarea class='form-control' rows='5' id='comment'></textarea>
+          </div>
+        <input type='submit' name='comments' value='Create List'/>
+    </form>
+
+    <a href='/'>Back to Main Page</a>
+</body>
+</html>

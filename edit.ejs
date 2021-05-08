@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
+    <title>Edit Form</title>
+  </head>
+  <body>
+    <h1>Edit List Page</h1>
+    <form action="/<%=data.id%>?_method=PUT" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name" value="<%=data.name%>"/><br>
+      <label for="store">Store</label>
+      <input type="text" name="store" value="<%=data.store%>"/><br>
+      <label for="item">Item</label>
+      <input type="text" name="item" value="<%=data.item%>"/><br>
+      <label for="qty">Quantity</label>
+      <input type="text" name="qty" value="<%=data.qty%>"/><br>
+      <label for="estPrice">Estimated Price</label>
+      <input type="text" name="estPrice" value="<%=data.estPrice%>"/><br>
+      <label for="comments">Comments</label>
+      <input type="text" name="comments" value="<%=data.comments%>"/><br>
+      <input type="submit" value="Update List">
+    </form>
+    <a href="/">Back to Main Page</a>
+  </body>
+</html>
